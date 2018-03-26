@@ -38,6 +38,7 @@ Page({
     var content = wx.getStorageSync('content') || []
     if (content == null || content == [] || content.length == 0) {
       // console.log('本地数据为空')
+      app.globalData.local_content = common.content;
       wx.setStorageSync('content', common.content)
     }
     else {
