@@ -1,0 +1,5 @@
+<view class="flex-wrp" wx:for="{{ content }}" wx:key="{{ item.key }}">
+  <navigator url="../detail/detail?id={{ item.key }}">
+    <view class="flex-item">{{item.key}}{{item.interpreter}}</view>
+  </navigator>
+</view>

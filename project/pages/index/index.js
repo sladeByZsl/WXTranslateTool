@@ -15,6 +15,12 @@ Page({
       url: '../logs/logs'
     })
   },
+  clickme:function(){
+    wx.navigateTo({
+      url: '../startPage/startPage'
+    })
+    // this.setData({msg:"实话实说"})
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({

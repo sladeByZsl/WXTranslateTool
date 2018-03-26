@@ -1,0 +1,41 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">单词</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="text" value="{{item.key}}"></input>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+           <view class="weui-cell__hd">
+            <view class="weui-label">音标</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="text" value="{{item.interpreter}}"></input>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+           <view class="weui-cell__hd">
+            <view class="weui-label">翻译</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="text" value="{{item.des}}"></input>
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+           <view class="weui-cell__hd">
+            <view class="weui-label">次数</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" type="text" value="{{count}}"></input>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
