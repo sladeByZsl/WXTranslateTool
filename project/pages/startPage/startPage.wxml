@@ -1,5 +1,26 @@
-<view class="flex-wrp" wx:for="{{ content }}" wx:key="{{ item.key }}">
-  <navigator url="../detail/detail?id={{ item.key }}">
-    <view class="flex-item">{{item.key}}{{item.interpreter}}</view>
-  </navigator>
+<!-- <button type="primary" bindtap="showStorage">显示本地存储</button> -->
+<view class="page-body">
+    <view class="page-section page-section-gap">
+      <view class="page-section-title">显示所有</view>
+      <view class="body-view">
+        <switch checked bindchange="switchChange" value="{{is_show_all}}" checked="{{is_show_all}}"/>
+      </view>
+    </view>
 </view>
+<checkbox-group bindchange="checkboxChange">
+<view wx:for="{{ content }}" wx:key="{{ item.key }}">
+  <view class="flex-wrp" style="flex-direction:row;">
+    <view>
+      <checkbox value="{{item.status}}" checked="{{item.status}}" />
+    </view>
+    <view>
+      <navigator url="../detail/detail?id={{ item.key }}">
+      <label>
+          {{item.key}}{{item.interpreter}}
+      </label>
+        <!-- <view class="flex-item">{{item.key}}{{item.interpreter}}</view> -->
+      </navigator>
+    </view>
+  </view>
+</view>
+</checkbox-group>

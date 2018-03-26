@@ -3,14 +3,14 @@ var content = [
     "count": 1,
     "interpreter": "[əˈbændən]",
     "des": "n.放任; 纵情 ",
-    "status": 0,
+    "status": 1,
     "key": "﻿abandon"
   },
   {
     "count": 1,
     "interpreter": "[ˈæbstrækt]",
     "des": "adj.抽象的抽象派的 ",
-    "status": 0,
+    "status": 1,
     "key": "abstract"
   },
   {
